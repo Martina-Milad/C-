@@ -1,0 +1,26 @@
+#include <stdio.h>
+#define MAXSIZE 100
+
+int main()
+{
+    int arr[MAXSIZE] ,i , size , count =0 ;
+	printf("enter size of array ");
+	scanf("%d" , &size);
+	printf("Input array elements: ");
+	for(i = 0 ; i<size ;i++){
+		scanf("%d", &arr[i]);
+	}
+
+	for(i=0 ;i<size ; i++)
+	{
+		if(arr[i]< 0)
+		{
+			count++;
+		}
+
+	}
+		printf("total number of negative elemtens  = %d" , count);
+
+
+
+}
