@@ -11,7 +11,7 @@ int main()
 		scanf("%d", &arr[i]);
 	}
 	
-	printf("Array elements after insertion : ");
+	printf("Array elements : ");
 	for(i=0 ;i<size ; i++)
 	{
 		printf("%d\n", arr[i]);
