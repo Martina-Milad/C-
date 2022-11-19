@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+int main()
+{
+    char c = 'C';
+    int i = 1;
+    float f = 10.4;
+    long long l = 989898989ll;
+
+    printf("Value of character = %c, Address of character = %u\n", c, &c);
+    printf("Value of integer = %d, Address of integer = %u\n", i, &i);
+    printf("Value of real = %f, Address of real = %u\n", f, &f);
+    printf("Value of biginteger = %lld, Address of biginteger = %u", l, &l);
+
+    return 0;
+}
