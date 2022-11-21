@@ -1,0 +1,25 @@
+#include <stdio.h>
+#define MAXSIZE 100
+
+
+int main()
+{
+	int size , arr[MAXSIZE] , i, j;
+	int count = 0;
+	printf("enter size of arry: ");
+	scanf("%d", &size);
+	for(i=0 ; i<size ; i++){
+		printf("enter array elemetens: ");
+		scanf("%d" , &arr[i]);
+	}
+	
+	for(i=0 ;i<size ; i++){
+		for (j=i+1 ; j<size ;j++ ){
+			if(arr[i] == arr[j]){
+				count++;
+				break;
+			}
+		}
+	}
+	printf("Total number of duplicate elements = %d" , count);
+}
